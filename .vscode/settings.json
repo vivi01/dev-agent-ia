@@ -1,0 +1,25 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.defaultProfile.windows": "Ubuntu WSL",
+    "terminal.integrated.profiles.windows": {
+        "Ubuntu WSL": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu",
+                "--cd",
+                "${workspaceFolder}"
+            ],
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ],
+    "python.analyses.autoimportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
+}
